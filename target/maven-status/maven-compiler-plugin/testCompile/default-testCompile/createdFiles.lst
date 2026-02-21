@@ -1,0 +1,8 @@
+test\CreateWithListTest.class
+service\UserService.class
+pojo\UserRequestPojo.class
+pojo\UserResponsePojo.class
+pojo\UserRequestCreateWithList.class
+utilities\ConfigReader.class
+test\UserTest.class
+test\UserTest2.class

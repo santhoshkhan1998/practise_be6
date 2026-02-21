@@ -1,6 +1,8 @@
 C:\Users\Admin\eclipse-workspace\practise_be6\src\test\java\service\UserService.java
 C:\Users\Admin\eclipse-workspace\practise_be6\src\test\java\test\UserTest.java
 C:\Users\Admin\eclipse-workspace\practise_be6\src\test\java\test\UserTest2.java
-C:\Users\Admin\eclipse-workspace\practise_be6\src\test\java\pojo\UserResponse.java
+C:\Users\Admin\eclipse-workspace\practise_be6\src\test\java\pojo\UserRequestPojo.java
+C:\Users\Admin\eclipse-workspace\practise_be6\src\test\java\test\CreateWithListTest.java
 C:\Users\Admin\eclipse-workspace\practise_be6\src\test\java\utilities\ConfigReader.java
-C:\Users\Admin\eclipse-workspace\practise_be6\src\test\java\pojo\UserRequest.java
+C:\Users\Admin\eclipse-workspace\practise_be6\src\test\java\pojo\UserResponsePojo.java
+C:\Users\Admin\eclipse-workspace\practise_be6\src\test\java\pojo\UserRequestCreateWithList.java

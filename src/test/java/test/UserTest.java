@@ -27,6 +27,7 @@ public class UserTest {
 		userRequest.setPhone(faker.phoneNumber().phoneNumber());
 		userRequest.setUserStatus(0);
 	}
+	//New Comment line added
 	
 	@Test
 	public void postmethod() {
