@@ -10,14 +10,14 @@ import pojo.UserRequestPojo;
 import pojo.UserResponsePojo;
 import service.UserService;
 
-public class UserTest {
+public class UserTestPost {
 	
 	UserRequestPojo userRequest;
 	Faker faker = new Faker();
 	
 	public void setupTestdat() {
 		userRequest = new UserRequestPojo();
-		System.out.println("START :: UserTest.setupTestdat");
+		System.out.println("START :: UserTestPost.setupTestdat");
 		userRequest.setId(faker.idNumber().hashCode());
 		userRequest.setUsername(faker.name().username());
 		userRequest.setFirstName(faker.name().firstName());
@@ -31,7 +31,7 @@ public class UserTest {
 	
 	@Test
 	public void postmethod() {
-		System.out.println("START :: UserTest.postmethod");
+		System.out.println("START :: UserTestPost.postmethod");
 		setupTestdat();
 		UserService userService = new UserService();
 		Response post = userService.postMethod(userRequest);
