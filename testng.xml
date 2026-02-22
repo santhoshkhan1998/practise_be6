@@ -5,6 +5,8 @@
     <classes>
       <class name="test.UserTest"/>
       <class name="test.UserTest2"/>
+      <class name="test.CreateWithListTest"/>
+      <!-- Test -->
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
