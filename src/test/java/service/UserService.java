@@ -44,4 +44,16 @@ public class UserService {
 		return post;
 	}
 
+	public Response getUserName(String username) {
+		System.out.println("START :: UserService.getUserName");
+		Response get = given()
+				.contentType(ContentType.JSON)
+				.accept(ContentType.JSON)
+				.pathParam("username", username)
+				.log().all()
+				.when()
+				.get(ConfigReader.getProperties("getUserName"));
+		return get;
+	}
+
 }
