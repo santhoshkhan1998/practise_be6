@@ -3,10 +3,10 @@
 <suite name="Suite">
   <test thread-count="5" name="Test">
     <classes>
-      <class name="test.UserTestPost"/>
+      <class name="test.PostUserTest"/>
       <class name="test.GetUserNameTest"/>
-      <class name="test.CreateWithListTest"/>
-      <class name="test.UserTest2"/>
+      <class name="test.PostCreateWithListTest"/>
+      <class name="test.PostUserTest2"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
