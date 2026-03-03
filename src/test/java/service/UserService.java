@@ -56,4 +56,34 @@ public class UserService {
 		return get;
 	}
 
+	/**
+	 * POST request to 'https://petstore.swagger.io/v2/user/createWithArray'
+	 * 
+	 * Sends a list/array of users:
+	 * 
+	 * [
+	 *   {
+	 *     "id": 0,
+	 *     "username": "string",
+	 *     "firstName": "string",
+	 *     "lastName": "string",
+	 *     "email": "string",
+	 *     "password": "string",
+	 *     "phone": "string",
+	 *     "userStatus": 0
+	 *   }
+	 * ]
+	 */
+	public Response postCreateWithArray(java.util.List<pojo.CreateWithArrayRequest> users) {
+		System.out.println("START :: UserService.postCreateWithArray");
+		Response post = given()
+				.contentType(ContentType.JSON)
+				.accept(ContentType.JSON)
+				.body(users)
+				.log().all()
+				.when()
+				.post(ConfigReader.getProperties("postCreateWithArray"));
+		return post;
+	}
+
 }

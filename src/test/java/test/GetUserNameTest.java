@@ -1,5 +1,6 @@
 package test;
 
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import com.github.javafaker.Faker;
@@ -36,6 +37,8 @@ public class GetUserNameTest {
         Response response = userService.postMethod(userRequest);
         response.then().log().all();
         response.then().statusCode(200);
+        
+  
     }
 
     @Test(priority = 2)

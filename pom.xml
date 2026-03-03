@@ -25,6 +25,13 @@
 			<scope>test</scope>
 		</dependency>
 
+		<!-- Override commons-codec to resolve conflict (rest-assured transitively uses 1.11) -->
+		<dependency>
+			<groupId>commons-codec</groupId>
+			<artifactId>commons-codec</artifactId>
+			<version>1.15</version>
+		</dependency>
+
 		<dependency>
 			<groupId>io.rest-assured</groupId>
 			<artifactId>json-path</artifactId>
@@ -55,12 +62,18 @@
 			<scope>test</scope>
 		</dependency>
 
-		<!-- JSON Schema Validator -->
+		<!-- JSON Schema Validator (exclude transitive jackson-databind; use project 2.17.1) -->
 		<dependency>
 			<groupId>io.rest-assured</groupId>
 			<artifactId>json-schema-validator</artifactId>
 			<version>5.1.1</version>
 			<scope>test</scope>
+			<exclusions>
+				<exclusion>
+					<groupId>com.fasterxml.jackson.core</groupId>
+					<artifactId>jackson-databind</artifactId>
+				</exclusion>
+			</exclusions>
 		</dependency>
 
 		<!-- Faker -->

@@ -11,7 +11,7 @@ import pojo.UserRequestPojo;
 import pojo.UserResponsePojo;
 import service.UserService;
 
-public class UserTest2 {
+public class PostUserTest2 {
 	
 	UserRequestPojo userRequest;
 	Faker faker = new Faker();

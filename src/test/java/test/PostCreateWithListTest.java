@@ -13,7 +13,7 @@ import service.UserService;
 import java.util.ArrayList;
 import java.util.List;
 
-public class CreateWithListTest {
+public class PostCreateWithListTest {
 
     @Test
     public void testPostCreateWithList() {
