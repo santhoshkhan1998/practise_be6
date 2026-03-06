@@ -86,4 +86,18 @@ public class UserService {
 		return post;
 	}
 
+
+	public Response loginUser(String username, String password) {
+		System.out.println("START :: UserService.loginUser");
+		Response response = given()
+				.contentType(ContentType.JSON)
+				.accept(ContentType.JSON)
+				.queryParam("username", username)
+				.queryParam("password", password)
+				.log().all()
+				.when()
+				.get(ConfigReader.getProperties("loginUser")); // Ensure "loginUser" property is set to "/user/login"
+		return response;
+	}
+
 }
